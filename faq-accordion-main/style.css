@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 100vh;
+    background-color: hwb(276 94% 0%);
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.background-img{
+    position: absolute;
+    left: 0;
+    bottom: 70%;
+    width: 100vw;
+    z-index: -1;
+}
+
+header{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+main{
+    background-color: white;
+    font-family: "Work Sans", sans-serif;
+    color: hsl(292, 42%, 14%);
+    position: absolute;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 30px;
+    scrollbar-width: none;
+}
+
+.container{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.container p{
+    height: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.container .active{
+    height: auto;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.main h2{
+    font-size: 16px;
+}
+.main .plus-icon{
+    width: 24px;
+}
+.main .minus-icon{
+    width: 24px;
+}
+
+.active{
+    height: auto;
+}

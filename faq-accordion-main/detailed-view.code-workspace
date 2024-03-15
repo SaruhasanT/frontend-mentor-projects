@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../detailed-view"
+		},
+		{
+			"path": "../practice"
+		},
+		{
+			"path": "../calculator"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "detailed-view"
+	}
+}
