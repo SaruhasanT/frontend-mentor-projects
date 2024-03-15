@@ -5,7 +5,7 @@ minusIcon.setAttribute('src','assets/images/icon-minus.svg')
 const plusIcon = document.createElement('img')
 plusIcon.className = 'plus-icon'
 plusIcon.setAttribute('src','assets/images/icon-plus.svg')
-
+console.log('hello');
 containers.forEach(container=>{
     container.addEventListener('click',(e)=>{
         if(e.target.tagName === 'IMG'){
@@ -41,4 +41,3 @@ containers.forEach(container=>{
 
     })
 })
-
