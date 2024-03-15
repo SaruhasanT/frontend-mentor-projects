@@ -11,23 +11,34 @@ containers.forEach(container=>{
         if(e.target.tagName === 'IMG'){
             const para = e.target.parentNode.nextElementSibling
             para.classList.toggle('active')
-            console.log(para.classList)
-            if(para.style.height != 'auto'){
+            let check = [];
+            for (let classname of para.classList){
+                check.push(classname)
+            }
+            if(check.includes('active')){
                 e.target.replaceWith(minusIcon.cloneNode(true))
+                
             }
             else{
                 e.target.replaceWith(plusIcon.cloneNode(true))
             }
+
         }
         else if(e.target.tagName === 'H2'){
             const para = e.target.parentNode.nextElementSibling
-            if(para.style.height != 'auto'){
+            para.classList.toggle('active')
+            let check = [];
+            for (let classname of para.classList){
+                check.push(classname)
+            }
+            if(check.includes('active')){
                 e.target.nextElementSibling.replaceWith(minusIcon.cloneNode(true))
             }
-            // else{
-            //     e.target.nextElementSibling.replaceWith(plusIcon.cloneNode(true))
-            //     cont.style.height = '50px'
-            // }
+            else{
+                e.target.nextElementSibling.replaceWith(plusIcon.cloneNode(true))
+            }
         }
+
     })
 })
+
