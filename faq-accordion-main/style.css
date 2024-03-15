@@ -47,15 +47,6 @@ main{
     margin-bottom: 20px;
 }
 
-.main .btn{
-    position: relative;
-    width: 24px;
-    height: 24px;
-}
-
-.main .btn img{
-    position: absolute;
-}
 
 .container p{
     height: 0;
